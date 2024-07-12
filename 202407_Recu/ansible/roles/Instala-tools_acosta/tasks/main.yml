@@ -1,0 +1,27 @@
+
+- name: "Install htop"
+  become: yes
+  package:
+    name: htop
+    state: present
+
+- name: "Install net-tools"
+  package:
+    name: net-tools
+    state: present
+
+- name: "Install tmux"
+  package:
+    name: tmux
+    state: present
+
+- name: "Install tree"
+  package:
+    name: tree
+    state: present
+
+- name: "Install speedtest-cli"
+  package:
+    name: speedtest-cli
+    state: present
+

@@ -1,0 +1,227 @@
+2024-07-11 19:51:28,273 p=5841 u=PA n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-11 19:51:28,417 p=5841 u=PA n=ansible | PLAY [all] *******************************************************************************************************************
+2024-07-11 19:51:28,446 p=5841 u=PA n=ansible | TASK [Gathering Facts] *******************************************************************************************************
+2024-07-11 19:51:28,508 p=5841 u=PA n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 127.0.0.1 port 22: Connection refused", "unreachable": true}
+2024-07-11 19:51:29,520 p=5841 u=PA n=ansible | ok: [localhost]
+2024-07-11 19:51:29,538 p=5841 u=PA n=ansible | TASK [include_role : 2PRecuperatorio] ****************************************************************************************
+2024-07-11 19:51:29,566 p=5841 u=PA n=ansible | TASK [2PRecuperatorio : Rol: 2PRecuperatorio] ********************************************************************************
+2024-07-11 19:51:29,878 p=5841 u=PA n=ansible | changed: [localhost] => (item=alumno)
+2024-07-11 19:51:29,889 p=5841 u=PA n=ansible | TASK [2PRecuperatorio : Agrego archivo desde template] ***********************************************************************
+2024-07-11 19:51:30,458 p=5841 u=PA n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "checksum": "0ad3902f5246e96b59581780e068557ee2667f98", "msg": "Destination directory /tmp/2do_parcial/alumno does not exist"}
+2024-07-11 19:51:30,459 p=5841 u=PA n=ansible | PLAY RECAP *******************************************************************************************************************
+2024-07-11 19:51:30,459 p=5841 u=PA n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-07-11 19:51:30,459 p=5841 u=PA n=ansible | localhost                  : ok=2    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-07-11 19:56:02,266 p=5976 u=PA n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-11 19:56:02,344 p=5976 u=PA n=ansible | PLAY [all] *******************************************************************************************************************
+2024-07-11 19:56:02,363 p=5976 u=PA n=ansible | TASK [Gathering Facts] *******************************************************************************************************
+2024-07-11 19:56:02,384 p=5976 u=PA n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 127.0.0.1 port 22: Connection refused", "unreachable": true}
+2024-07-11 19:56:03,393 p=5976 u=PA n=ansible | ok: [localhost]
+2024-07-11 19:56:03,409 p=5976 u=PA n=ansible | TASK [include_role : 2PRecuperatorio] ****************************************************************************************
+2024-07-11 19:56:03,434 p=5976 u=PA n=ansible | TASK [2PRecuperatorio : Rol: 2PRecuperatorio] ********************************************************************************
+2024-07-11 19:56:03,747 p=5976 u=PA n=ansible | ok: [localhost] => (item=alumno)
+2024-07-11 19:56:03,756 p=5976 u=PA n=ansible | TASK [2PRecuperatorio : Agrego archivo desde template] ***********************************************************************
+2024-07-11 19:56:04,306 p=5976 u=PA n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "checksum": "0ad3902f5246e96b59581780e068557ee2667f98", "msg": "Destination directory /tmp/2do_parcial/alumno does not exist"}
+2024-07-11 19:56:04,307 p=5976 u=PA n=ansible | PLAY RECAP *******************************************************************************************************************
+2024-07-11 19:56:04,307 p=5976 u=PA n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-07-11 19:56:04,308 p=5976 u=PA n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-07-11 20:05:53,133 p=6232 u=PA n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-11 20:05:53,197 p=6232 u=PA n=ansible | PLAY [all] ******************************************************************************************************************************************************************
+2024-07-11 20:05:53,211 p=6232 u=PA n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************
+2024-07-11 20:05:53,559 p=6232 u=PA n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nPA@127.0.0.1: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).", "unreachable": true}
+2024-07-11 20:05:54,219 p=6232 u=PA n=ansible | ok: [localhost]
+2024-07-11 20:05:54,235 p=6232 u=PA n=ansible | TASK [include_role : 2PRecuperatorio] ***************************************************************************************************************************************
+2024-07-11 20:05:54,262 p=6232 u=PA n=ansible | TASK [2PRecuperatorio : Rol: 2PRecuperatorio] *******************************************************************************************************************************
+2024-07-11 20:05:54,566 p=6232 u=PA n=ansible | ok: [localhost] => (item=alumno)
+2024-07-11 20:05:54,573 p=6232 u=PA n=ansible | TASK [2PRecuperatorio : Agrego archivo desde template] **********************************************************************************************************************
+2024-07-11 20:05:55,088 p=6232 u=PA n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "checksum": "0ad3902f5246e96b59581780e068557ee2667f98", "msg": "Destination directory /tmp/2do_parcial/alumno does not exist"}
+2024-07-11 20:05:55,089 p=6232 u=PA n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-07-11 20:05:55,089 p=6232 u=PA n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-07-11 20:05:55,089 p=6232 u=PA n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-07-11 20:10:41,385 p=6402 u=PA n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-11 20:10:41,453 p=6402 u=PA n=ansible | PLAY [all] ******************************************************************************************************************************************************************
+2024-07-11 20:10:41,470 p=6402 u=PA n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************
+2024-07-11 20:10:41,580 p=6402 u=PA n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nPA@127.0.0.1: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).", "unreachable": true}
+2024-07-11 20:10:42,439 p=6402 u=PA n=ansible | ok: [localhost]
+2024-07-11 20:10:42,456 p=6402 u=PA n=ansible | TASK [include_role : 2PRecuperatorio] ***************************************************************************************************************************************
+2024-07-11 20:10:42,480 p=6402 u=PA n=ansible | TASK [2PRecuperatorio : Rol: 2PRecuperatorio] *******************************************************************************************************************************
+2024-07-11 20:10:42,762 p=6402 u=PA n=ansible | ok: [localhost] => (item=alumno)
+2024-07-11 20:10:42,770 p=6402 u=PA n=ansible | TASK [2PRecuperatorio : Agrego archivo desde template] **********************************************************************************************************************
+2024-07-11 20:10:43,276 p=6402 u=PA n=ansible | changed: [localhost]
+2024-07-11 20:10:43,286 p=6402 u=PA n=ansible | TASK [Otra tarea] ***********************************************************************************************************************************************************
+2024-07-11 20:10:43,297 p=6402 u=PA n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-07-11 20:10:43,316 p=6402 u=PA n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-07-11 20:10:43,316 p=6402 u=PA n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-07-11 20:10:43,316 p=6402 u=PA n=ansible | localhost                  : ok=4    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-07-11 20:24:36,519 p=6589 u=PA n=ansible | - Role Instala-tools_acosta was created successfully
+2024-07-11 20:34:05,218 p=6631 u=PA n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-11 20:34:05,285 p=6631 u=PA n=ansible | PLAY [all] ******************************************************************************************************************************************************************
+2024-07-11 20:34:05,300 p=6631 u=PA n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************
+2024-07-11 20:34:05,518 p=6631 u=PA n=ansible | fatal: [server1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\ntu_usuario@127.0.0.1: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).", "unreachable": true}
+2024-07-11 20:34:05,519 p=6631 u=PA n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nPA@127.0.0.1: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).", "unreachable": true}
+2024-07-11 20:34:06,284 p=6631 u=PA n=ansible | ok: [localhost]
+2024-07-11 20:34:06,300 p=6631 u=PA n=ansible | TASK [include_role : 2PRecuperatorio] ***************************************************************************************************************************************
+2024-07-11 20:34:06,321 p=6631 u=PA n=ansible | TASK [2PRecuperatorio : Rol: 2PRecuperatorio] *******************************************************************************************************************************
+2024-07-11 20:34:06,579 p=6631 u=PA n=ansible | changed: [localhost] => (item=alumno)
+2024-07-11 20:34:06,588 p=6631 u=PA n=ansible | TASK [2PRecuperatorio : Agrego archivo desde template] **********************************************************************************************************************
+2024-07-11 20:34:07,039 p=6631 u=PA n=ansible | ok: [localhost]
+2024-07-11 20:34:07,050 p=6631 u=PA n=ansible | TASK [Otra tarea] ***********************************************************************************************************************************************************
+2024-07-11 20:34:07,060 p=6631 u=PA n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-07-11 20:34:07,066 p=6631 u=PA n=ansible | TASK [include_role : Instala-tools-acosta] **********************************************************************************************************************************
+2024-07-11 20:34:07,081 p=6631 u=PA n=ansible | ERROR! the role 'Instala-tools-acosta' was not found in /home/PA/UTN-FRA_SO_Examenes/202407_Recu/ansible/roles:/tmp:/home/PA/UTN-FRA_SO_Examenes/202407_Recu:/home/PA/UTN-FRA_SO_Examenes/202407_Recu/ansible
+
+The error appears to be in '/home/PA/UTN-FRA_SO_Examenes/202407_Recu/ansible/playbook.yml': line 13, column 15, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    - include_role:
+        name: Instala-tools-acosta
+              ^ here
+
+2024-07-11 20:34:07,082 p=6631 u=PA n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-07-11 20:34:07,082 p=6631 u=PA n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-07-11 20:34:07,082 p=6631 u=PA n=ansible | localhost                  : ok=4    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-07-11 20:34:07,082 p=6631 u=PA n=ansible | server1                    : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-07-11 20:34:33,956 p=6757 u=PA n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-11 20:34:34,025 p=6757 u=PA n=ansible | PLAY [all] ******************************************************************************************************************************************************************
+2024-07-11 20:34:34,038 p=6757 u=PA n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************
+2024-07-11 20:34:34,149 p=6757 u=PA n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nPA@127.0.0.1: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).", "unreachable": true}
+2024-07-11 20:34:34,990 p=6757 u=PA n=ansible | ok: [localhost]
+2024-07-11 20:34:35,005 p=6757 u=PA n=ansible | TASK [include_role : 2PRecuperatorio] ***************************************************************************************************************************************
+2024-07-11 20:34:35,031 p=6757 u=PA n=ansible | TASK [2PRecuperatorio : Rol: 2PRecuperatorio] *******************************************************************************************************************************
+2024-07-11 20:34:35,318 p=6757 u=PA n=ansible | ok: [localhost] => (item=alumno)
+2024-07-11 20:34:35,326 p=6757 u=PA n=ansible | TASK [2PRecuperatorio : Agrego archivo desde template] **********************************************************************************************************************
+2024-07-11 20:34:35,752 p=6757 u=PA n=ansible | ok: [localhost]
+2024-07-11 20:34:35,764 p=6757 u=PA n=ansible | TASK [Otra tarea] ***********************************************************************************************************************************************************
+2024-07-11 20:34:35,776 p=6757 u=PA n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-07-11 20:34:35,782 p=6757 u=PA n=ansible | TASK [include_role : Instala-tools-acosta] **********************************************************************************************************************************
+2024-07-11 20:34:35,799 p=6757 u=PA n=ansible | ERROR! the role 'Instala-tools-acosta' was not found in /home/PA/UTN-FRA_SO_Examenes/202407_Recu/ansible/roles:/tmp:/home/PA/UTN-FRA_SO_Examenes/202407_Recu:/home/PA/UTN-FRA_SO_Examenes/202407_Recu/ansible
+
+The error appears to be in '/home/PA/UTN-FRA_SO_Examenes/202407_Recu/ansible/playbook.yml': line 13, column 15, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    - include_role:
+        name: Instala-tools-acosta
+              ^ here
+
+2024-07-11 20:34:35,800 p=6757 u=PA n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-07-11 20:34:35,800 p=6757 u=PA n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-07-11 20:34:35,800 p=6757 u=PA n=ansible | localhost                  : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-07-11 21:57:31,074 p=7708 u=PA n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-11 21:57:31,149 p=7708 u=PA n=ansible | PLAY [all] ***************************************************************************************************************************************
+2024-07-11 21:57:31,169 p=7708 u=PA n=ansible | TASK [Gathering Facts] ***************************************************************************************************************************
+2024-07-11 21:57:31,317 p=7708 u=PA n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nPA@127.0.0.1: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).", "unreachable": true}
+2024-07-11 21:57:32,301 p=7708 u=PA n=ansible | ok: [localhost]
+2024-07-11 21:57:32,319 p=7708 u=PA n=ansible | TASK [include_role : 2PRecuperatorio] ************************************************************************************************************
+2024-07-11 21:57:32,347 p=7708 u=PA n=ansible | TASK [2PRecuperatorio : Rol: 2PRecuperatorio] ****************************************************************************************************
+2024-07-11 21:57:32,734 p=7708 u=PA n=ansible | ok: [localhost] => (item=alumno)
+2024-07-11 21:57:32,743 p=7708 u=PA n=ansible | TASK [2PRecuperatorio : Agrego archivo desde template] *******************************************************************************************
+2024-07-11 21:57:33,215 p=7708 u=PA n=ansible | ok: [localhost]
+2024-07-11 21:57:33,227 p=7708 u=PA n=ansible | TASK [Otra tarea] ********************************************************************************************************************************
+2024-07-11 21:57:33,238 p=7708 u=PA n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-07-11 21:57:33,245 p=7708 u=PA n=ansible | TASK [include_role : Instala-tools-acosta] *******************************************************************************************************
+2024-07-11 21:57:33,266 p=7708 u=PA n=ansible | ERROR! the role 'Instala-tools-acosta' was not found in /home/PA/UTN-FRA_SO_Examenes/202407_Recu/ansible/roles:/tmp:/home/PA/UTN-FRA_SO_Examenes/202407_Recu:/home/PA/UTN-FRA_SO_Examenes/202407_Recu/ansible
+
+The error appears to be in '/home/PA/UTN-FRA_SO_Examenes/202407_Recu/ansible/playbook.yml': line 13, column 15, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    - include_role:
+        name: Instala-tools-acosta
+              ^ here
+
+2024-07-11 21:57:33,267 p=7708 u=PA n=ansible | PLAY RECAP ***************************************************************************************************************************************
+2024-07-11 21:57:33,267 p=7708 u=PA n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-07-11 21:57:33,267 p=7708 u=PA n=ansible | localhost                  : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-07-11 21:59:44,419 p=7830 u=PA n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-11 21:59:44,502 p=7830 u=PA n=ansible | PLAY [all] ***************************************************************************************************************************************
+2024-07-11 21:59:44,520 p=7830 u=PA n=ansible | TASK [Gathering Facts] ***************************************************************************************************************************
+2024-07-11 21:59:44,600 p=7830 u=PA n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nPA@127.0.0.1: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).", "unreachable": true}
+2024-07-11 21:59:45,564 p=7830 u=PA n=ansible | ok: [localhost]
+2024-07-11 21:59:45,579 p=7830 u=PA n=ansible | TASK [include_role : 2PRecuperatorio] ************************************************************************************************************
+2024-07-11 21:59:45,606 p=7830 u=PA n=ansible | TASK [2PRecuperatorio : Rol: 2PRecuperatorio] ****************************************************************************************************
+2024-07-11 21:59:45,972 p=7830 u=PA n=ansible | ok: [localhost] => (item=alumno)
+2024-07-11 21:59:45,980 p=7830 u=PA n=ansible | TASK [2PRecuperatorio : Agrego archivo desde template] *******************************************************************************************
+2024-07-11 21:59:46,456 p=7830 u=PA n=ansible | ok: [localhost]
+2024-07-11 21:59:46,468 p=7830 u=PA n=ansible | TASK [Otra tarea] ********************************************************************************************************************************
+2024-07-11 21:59:46,514 p=7830 u=PA n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-07-11 21:59:46,521 p=7830 u=PA n=ansible | TASK [include_role : Instala-tools-acosta] *******************************************************************************************************
+2024-07-11 21:59:46,539 p=7830 u=PA n=ansible | ERROR! the role 'Instala-tools-acosta' was not found in /home/PA/UTN-FRA_SO_Examenes/202407_Recu/ansible/roles:/tmp:/home/PA/UTN-FRA_SO_Examenes/202407_Recu:/home/PA/UTN-FRA_SO_Examenes/202407_Recu/ansible
+
+The error appears to be in '/home/PA/UTN-FRA_SO_Examenes/202407_Recu/ansible/playbook.yml': line 13, column 15, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    - include_role:
+        name: Instala-tools-acosta
+              ^ here
+
+2024-07-11 21:59:46,540 p=7830 u=PA n=ansible | PLAY RECAP ***************************************************************************************************************************************
+2024-07-11 21:59:46,540 p=7830 u=PA n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-07-11 21:59:46,540 p=7830 u=PA n=ansible | localhost                  : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-07-11 22:01:45,693 p=7970 u=PA n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-11 22:01:45,769 p=7970 u=PA n=ansible | PLAY [all] ***************************************************************************************************************************************
+2024-07-11 22:01:45,784 p=7970 u=PA n=ansible | TASK [Gathering Facts] ***************************************************************************************************************************
+2024-07-11 22:01:46,048 p=7970 u=PA n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nPA@127.0.0.1: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).", "unreachable": true}
+2024-07-11 22:01:46,730 p=7970 u=PA n=ansible | ok: [localhost]
+2024-07-11 22:01:46,746 p=7970 u=PA n=ansible | TASK [include_role : 2PRecuperatorio] ************************************************************************************************************
+2024-07-11 22:01:46,774 p=7970 u=PA n=ansible | TASK [2PRecuperatorio : Rol: 2PRecuperatorio] ****************************************************************************************************
+2024-07-11 22:01:47,127 p=7970 u=PA n=ansible | ok: [localhost] => (item=alumno)
+2024-07-11 22:01:47,134 p=7970 u=PA n=ansible | TASK [2PRecuperatorio : Agrego archivo desde template] *******************************************************************************************
+2024-07-11 22:01:47,629 p=7970 u=PA n=ansible | ok: [localhost]
+2024-07-11 22:01:47,641 p=7970 u=PA n=ansible | TASK [Otra tarea] ********************************************************************************************************************************
+2024-07-11 22:01:47,652 p=7970 u=PA n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-07-11 22:01:47,659 p=7970 u=PA n=ansible | TASK [include_role : Instala-tools_acosta] *******************************************************************************************************
+2024-07-11 22:01:47,692 p=7970 u=PA n=ansible | TASK [Instala-tools_acosta : Install htop] *******************************************************************************************************
+2024-07-11 22:01:48,199 p=7970 u=PA n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "This command has to be run under the root user.", "results": []}
+2024-07-11 22:01:48,201 p=7970 u=PA n=ansible | PLAY RECAP ***************************************************************************************************************************************
+2024-07-11 22:01:48,201 p=7970 u=PA n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-07-11 22:01:48,202 p=7970 u=PA n=ansible | localhost                  : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-07-11 22:05:42,750 p=8106 u=PA n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-11 22:05:42,819 p=8106 u=PA n=ansible | PLAY [all] ***************************************************************************************************************************************
+2024-07-11 22:05:42,835 p=8106 u=PA n=ansible | TASK [Gathering Facts] ***************************************************************************************************************************
+2024-07-11 22:05:42,956 p=8106 u=PA n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nPA@127.0.0.1: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).", "unreachable": true}
+2024-07-11 22:05:43,884 p=8106 u=PA n=ansible | ok: [localhost]
+2024-07-11 22:05:43,899 p=8106 u=PA n=ansible | TASK [include_role : 2PRecuperatorio] ************************************************************************************************************
+2024-07-11 22:05:43,925 p=8106 u=PA n=ansible | TASK [2PRecuperatorio : Rol: 2PRecuperatorio] ****************************************************************************************************
+2024-07-11 22:05:44,240 p=8106 u=PA n=ansible | ok: [localhost] => (item=alumno)
+2024-07-11 22:05:44,247 p=8106 u=PA n=ansible | TASK [2PRecuperatorio : Agrego archivo desde template] *******************************************************************************************
+2024-07-11 22:05:44,712 p=8106 u=PA n=ansible | ok: [localhost]
+2024-07-11 22:05:44,724 p=8106 u=PA n=ansible | TASK [Otra tarea] ********************************************************************************************************************************
+2024-07-11 22:05:44,735 p=8106 u=PA n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-07-11 22:05:44,741 p=8106 u=PA n=ansible | TASK [include_role : Instala-tools_acosta] *******************************************************************************************************
+2024-07-11 22:05:44,802 p=8106 u=PA n=ansible | TASK [Instala-tools_acosta : Install htop] *******************************************************************************************************
+2024-07-11 22:05:53,297 p=8106 u=PA n=ansible | changed: [localhost]
+2024-07-11 22:05:53,306 p=8106 u=PA n=ansible | TASK [Instala-tools_acosta : Install net-tools] **************************************************************************************************
+2024-07-11 22:05:53,813 p=8106 u=PA n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "This command has to be run under the root user.", "results": []}
+2024-07-11 22:05:53,815 p=8106 u=PA n=ansible | PLAY RECAP ***************************************************************************************************************************************
+2024-07-11 22:05:53,815 p=8106 u=PA n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-07-11 22:05:53,815 p=8106 u=PA n=ansible | localhost                  : ok=5    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   

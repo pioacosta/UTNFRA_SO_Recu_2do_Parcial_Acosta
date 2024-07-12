@@ -1,0 +1,9 @@
+nombre: Pio Apellido: Acosta
+
+division: 311
+
+Fecha: {{ ansible_date_time.date }}
+
+-----------------------------------------
+distribucion: {{ ansible_facts.distribution }}
+Cantidad de cores: {{ ansible_facts.processor_nproc }}
